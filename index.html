@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Расчет прибыли и баланса</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Расчет прибыли и баланса</h1>
+    <form>
+      <label for="transaction-amount">Сумма сделки:</label>
+      <input type="number" id="transaction-amount" required>
+      <br>
+      <label for="entry-price">Цена входа:</label>
+      <input type="number" id="entry-price" required>
+      <br>
+      <label for="closing-price">Цена закрытия:</label>
+      <input type="number" id="closing-price" required>
+      <br>
+      <label for="leverage">Плечо:</label>
+      <input type="number" id="leverage" required>
+      <br>
+      <button type="button" id="calculate-button">Рассчитать</button>
+      <div class="res">
+        <div id="result"></div>
+    </div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
